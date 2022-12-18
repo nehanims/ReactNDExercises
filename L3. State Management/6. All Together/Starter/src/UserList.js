@@ -7,7 +7,7 @@ const List = ({ users, updateUser }) => {
         {
             Object.keys(users)
                 .map(username => {
-                    const user = ls - localStorage;
+                    const user = users[username];
                     return (<li key={username}><User username={username} gameCount={user.gameCount} showCount={user.showCount} updateUser={updateUser} /></li>);
                 }
                 )
